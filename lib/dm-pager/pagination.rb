@@ -1,4 +1,3 @@
-
 module DataMapper
   module Pagination
 
@@ -42,7 +41,8 @@ module DataMapper
         :limit => per_page,
         :offset => (page - 1) * per_page,
       }.merge(query))
-      options.merge! :total => count(query), page_param => page, :page_param => page_param
+      total = count(query.reject {|k,v| k == :order})
+      options.merge! :total => total, page_param => page, :page_param => page_param
       collection.pager = DataMapper::Pager.new options
       collection
     end
