@@ -22,20 +22,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<dm-core>, ["~> 1.2.0"])
-      s.add_runtime_dependency(%q<dm-aggregates>, ["~> 1.2.0"])
-      s.add_development_dependency(%q<dm-migrations>, ["~> 1.2.0"])
-      s.add_development_dependency(%q<dm-sqlite-adapter>, ["~> 1.2.0"])
+      s.add_runtime_dependency(%q<dm-core>, ["~> 1.3.0.beta"])
+      s.add_runtime_dependency(%q<dm-aggregates>, ["~> 1.3.0.beta"])
+      s.add_development_dependency(%q<dm-migrations>, ["~> 1.3.0.beta"])
+      s.add_development_dependency(%q<dm-sqlite-adapter>, ["~> 1.3.0.beta"])
     else
-      s.add_dependency(%q<dm-core>, ["~> 1.2.0"])
-      s.add_dependency(%q<dm-aggregates>, ["~> 1.2.0"])
-      s.add_dependency(%q<dm-migrations>, ["~> 1.2.0"])
-      s.add_dependency(%q<dm-sqlite-adapter>, ["~> 1.2.0"])
+      s.add_dependency(%q<dm-core>, ["~> 1.3.0.beta"])
+      s.add_dependency(%q<dm-aggregates>, ["~> 1.3.0.beta"])
+      s.add_dependency(%q<dm-migrations>, ["~> 1.3.0.beta"])
+      s.add_dependency(%q<dm-sqlite-adapter>, ["~> 1.3.0.beta"])
     end
   else
-    s.add_dependency(%q<dm-core>, ["~> 1.2.0"])
-    s.add_dependency(%q<dm-aggregates>, ["~> 1.2.0"])
-    s.add_dependency(%q<dm-migrations>, ["~> 1.2.0"])
-    s.add_dependency(%q<dm-sqlite-adapter>, ["~> 1.2.0"])
+    s.add_dependency(%q<dm-core>, ["~> 1.3.0.beta"])
+    s.add_dependency(%q<dm-aggregates>, ["~> 1.3.0.beta"])
+    s.add_dependency(%q<dm-migrations>, ["~> 1.3.0.beta"])
+    s.add_dependency(%q<dm-sqlite-adapter>, ["~> 1.3.0.beta"])
   end
 end
